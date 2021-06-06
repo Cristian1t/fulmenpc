@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
+import SEO from '../components/SEO';
+import RestSite from '../components/RestSite';
 
 export const config = {
   amp: true,
@@ -10,17 +12,24 @@ export const config = {
 export default function IndexPage() {
   return (
     <div className="index">
+      <Head>
+        <title>FulmenPC</title>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Nunito"
+        />
+      </Head>
       <Navbar />
       <Hero />
+      <RestSite />
+      <SEO />
       <Footer />
+
       <style jsx global>{`
         html,
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, Nunito, BlinkMacSystemFont, Segoe UI,
-            Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-            Helvetica Neue, sans-serif;
         }
 
         a {
@@ -50,7 +59,7 @@ export default function IndexPage() {
             no-repeat;
           display: grid;
           grid-template-rows: auto auto auto;
-          font-family: 'Fira Code';
+          font-family: 'Nunito';
         }
       `}</style>
     </div>

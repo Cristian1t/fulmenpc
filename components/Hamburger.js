@@ -138,6 +138,11 @@ export default function Hamburger() {
         .nav-list li a :hover {
           color: blue;
         }
+        @media only screen and (min-width: 769px) {
+          #hamburger {
+            display: none;
+          }
+        }
       `}</style>
     </div>
   );

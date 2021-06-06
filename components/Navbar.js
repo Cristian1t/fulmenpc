@@ -48,8 +48,8 @@ export default function Navbar() {
           display: none;
           list-style: none;
           justify-content: space-evenly;
-          border-top: 1px solid black;
-          border-bottom: 1px solid black;
+          font-size: 2rem;
+          cursor: pointer;
         }
         li {
           padding: 0.5rem;
@@ -57,6 +57,16 @@ export default function Navbar() {
         li :hover {
           color: red;
         }
+        @media only screen and (min-width: 769px) {
+          .linkmenu {
+            display: flex;
+          }
+          .logo {
+            font-size: 3rem;
+          }
+          .logoimg {
+            width: 2.5rem;
+          }
       `}</style>
     </div>
   );
