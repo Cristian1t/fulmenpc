@@ -9,6 +9,7 @@ export default function Servizi() {
           width="550"
           height="250"
           layout="responsive"
+          alt="servizi"
         ></amp-img>
       </div>
       <div className="speedtext">

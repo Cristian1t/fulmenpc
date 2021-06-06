@@ -1,0 +1,9 @@
+{
+  "name": "FulmenPC",
+  "short_name": "FulmenPC",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "white",
+  "theme_color": "#90cdf4",
+  "orientation": "portrait-primary"
+}

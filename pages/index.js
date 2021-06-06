@@ -14,10 +14,16 @@ export default function IndexPage() {
     <div className="index">
       <Head>
         <title>FulmenPC</title>
+        <meta
+          name="description"
+          content="Creazione siti internet, assistenza web e hardware per aziende e privati"
+        />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Nunito"
         />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="canonical" href="https://fulmenpc.vercel.app/" />
       </Head>
       <Navbar />
       <Hero />
@@ -60,6 +66,7 @@ export default function IndexPage() {
           display: grid;
           grid-template-rows: auto auto auto;
           font-family: 'Nunito';
+          font-display: swap;
         }
       `}</style>
     </div>

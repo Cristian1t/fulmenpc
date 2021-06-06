@@ -9,6 +9,7 @@ export default function SEO() {
         width="400"
         height="100"
         layout="responsive"
+        alt="seoimg"
       ></amp-img>
       <p>
         Grazie alla loro velocità e soluzioni SEO, i nostri siti vengono

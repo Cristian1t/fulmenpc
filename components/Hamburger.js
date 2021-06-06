@@ -4,10 +4,10 @@ export default function Hamburger() {
   return (
     <div className="hamburgerwrap">
       <div
-        id="hamburger"
-        tabindex="1"
+        id="hamburgermenu"
+        tabindex="0"
         role="button"
-        on="tap:hamburger.toggleClass(class='close'),nav-menu.toggleClass(class='active')"
+        on="tap:hamburgermenu.toggleClass(class='close'),nav-menu.toggleClass(class='active')"
       >
         <span></span>
         <span></span>
@@ -16,9 +16,9 @@ export default function Hamburger() {
       <div id="nav-menu">
         <ul
           className="nav-list"
-          role="button"
-          tabindex="1"
-          on="tap:hamburger.toggleClass(class='close'),nav-menu.toggleClass(class='active')"
+          role="ul"
+          tabindex="0"
+          on="tap:hamburgermenu.toggleClass(class='close'),nav-menu.toggleClass(class='active')"
         >
           <li>
             <a href="#">Home</a>
@@ -35,7 +35,7 @@ export default function Hamburger() {
         </ul>
       </div>
       <style jsx>{`
-        #hamburger {
+        #hamburgermenu {
           position: relative;
           top: 50%;
           left: 50%;
@@ -46,7 +46,7 @@ export default function Hamburger() {
           overflow: hidden;
           cursor: pointer;
         }
-        #hamburger span {
+        #hamburgermenu span {
           position: absolute;
           transform: translateY(-50%);
           width: 70%;
@@ -54,39 +54,39 @@ export default function Hamburger() {
           background: #262626;
           transition: 1s;
         }
-        #hamburger span:nth-of-type(1) {
+        #hamburgermenu span:nth-of-type(1) {
           top: 30%;
           left: 15%;
           transition-delay: 1s;
           opacity: 1;
         }
-        #hamburger span:nth-of-type(2) {
+        #hamburgermenu span:nth-of-type(2) {
           top: 50%;
           left: 15%;
           transition-delay: 0s;
         }
-        #hamburger span:nth-of-type(3) {
+        #hamburgermenu span:nth-of-type(3) {
           top: 70%;
           right: 15%;
           transition-delay: 1s;
           opacity: 1;
         }
-        #hamburger.close span:nth-of-type(1) {
+        #hamburgermenu.close span:nth-of-type(1) {
           left: 100%;
           transition-delay: 0s;
           opacity: 0;
         }
-        #hamburger.close span:nth-of-type(2) {
+        #hamburgermenu.close span:nth-of-type(2) {
           transform: translateY(-50%) rotate(405deg);
           transition-delay: 0.5s;
         }
-        #hamburger.close span:nth-of-type(3) {
+        #hamburgermenu.close span:nth-of-type(3) {
           right: 100%;
           transition-delay: 0s;
           opacity: 0;
         }
 
-        #hamburger span:nth-of-type(2)::before {
+        #hamburgermenu span:nth-of-type(2)::before {
           content: '';
           position: absolute;
           top: -150px;
@@ -98,7 +98,7 @@ export default function Hamburger() {
           transition: 1s;
           transition-delay: 0.5s;
         }
-        #hamburger.close span:nth-of-type(2)::before {
+        #hamburgermenu.close span:nth-of-type(2)::before {
           top: 0;
           transition-delay: 1s;
         }
@@ -139,7 +139,7 @@ export default function Hamburger() {
           color: blue;
         }
         @media only screen and (min-width: 769px) {
-          #hamburger {
+          #hamburgermenu {
             display: none;
           }
         }

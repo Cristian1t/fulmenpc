@@ -10,6 +10,7 @@ export default function Hero() {
           width="600"
           height="500"
           layout="responsive"
+          alt="heroimg"
         ></amp-img>
       </div>
       <div className="herotext">

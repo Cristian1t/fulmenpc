@@ -12,6 +12,7 @@ export default function Navbar() {
             width="30"
             height="40"
             layout="responsive"
+            alt="logoimg"
           ></amp-img>
         </div>
         FulmenPC

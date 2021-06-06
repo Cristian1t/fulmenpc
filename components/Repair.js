@@ -9,6 +9,7 @@ export default function Repair() {
           width="550"
           height="250"
           layout="responsive"
+          alt="repairimg"
         ></amp-img>
       </div>
       <div className="speedtext">
